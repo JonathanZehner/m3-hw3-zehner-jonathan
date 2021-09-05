@@ -1,14 +1,17 @@
 @padding: 50px 25px;
 
 // fonts and typography
-@font: 'Roboto', sans-serif;
+@font: 400 1rem/1.5 'Roboto', sans-serif;
+@font-span: 500 30px/1.5 'Roboto', sans-serif;
+@font-h1: 500 30px/1.5 'Roboto', sans-serif;
+@font-lwrcs: 500 30px/1.5 'Roboto', sans-serif;
+@font-a: 500 18px/1.5 'Roboto', sans-serif;
+@font-up-a: 500 18px/1.5 'Roboto', sans-serif;
+@font-btn: 500 18px/1.5 'Roboto', sans-serif;
 @text-align-c: center;
 @text-align-l: left;
 @list: none;
 @upper: uppercase;
-
-// display
-@display: flex;
 
 // alignment
 @flow-r: row wrap;
@@ -31,57 +34,3 @@
 @width: 150px;
 @height: 50px;
 
-// mixins
-.nav-ul {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0;
-    li {
-        padding: 0 25px;
-        list-style-type: @list;
-    }
-}
-
-.red-ltrs {
-    color: @color-tertiary;
-    text-transform: @upper;
-}
-
-.background-img {
-    background: @color-primary @background no-repeat center;
-    background-size: cover;
-}
-
-.logo {
-    align-self: center;
-    height: 100px;
-    justify-content: center;
-}
-
-/*-- Sticky Footer Mixin --*/
-.html-body {
-    html, body {
-        height: 100%;
-        body {
-            display: flex;
-            flex-direction: column;
-            main {
-                flex: 1 0 auto;
-            }
-            .footer {
-                flex-shrink: 0;
-            }
-        }
-    }
-}
-
-// button mixin
-.btn {
-    background-color: @color-secondary;
-    border: 1px solid @color-secondary;
-    border-radius: 5px;
-    margin-top: 20px;
-    padding: 10px 20px;
-    text-transform: @upper;
-    width: @width;
-}
