@@ -4,10 +4,20 @@
   margin: 0;
   padding: 0;
 }
+.red-ltrs {
+  color: #ee252f;
+  text-transform: uppercase;
+}
+/*== Universal Styling ==*/
+.red-ltrs {
+  color: #ee252f;
+  text-transform: uppercase;
+}
 /*== Header ==*/
 .header {
   background-color: #f8df1f;
   height: 100px;
+  padding: 50px 25px;
 }
 .header .nav ul {
   display: -webkit-box;
@@ -17,6 +27,9 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+}
+.header .nav ul li {
+  list-style-type: none;
 }
 .footer {
   background-color: #080801;
