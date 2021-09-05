@@ -65,7 +65,7 @@ main {
         .flex-art();// mixin
 
         div {
-        padding-right: @pad-r;
+            padding-right: @pad;
             h2 {
                 .h2();// mixin
             }
@@ -75,22 +75,17 @@ main {
         }
     }
     .article-2 {
-        img {
+        background-color: @color-primary;
 
-        }
-        h2 {
-
-        }
-        p {
-
-        }
-        button {
-
+        div, img {
+            padding-left: @pad;
         }
     }
 }
 
 .footer {
     background-color: @color-quaternary;
+    border-top: 8px solid @color-secondary;
     .logo();// mixin
+    padding: 15px 0 15px;
 }

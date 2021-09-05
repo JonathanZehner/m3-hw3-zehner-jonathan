@@ -55,12 +55,8 @@
   background-size: cover;
 }
 .logo {
-  -ms-flex-item-align: center;
-      align-self: center;
   height: 100px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 .btn {
   background-color: #f8df1f;
@@ -76,6 +72,9 @@
   text-transform: uppercase;
 }
 .flex-art {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,7 +83,6 @@
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   margin: 0 auto;
-  max-width: 1000px;
   padding: 50px 10%;
 }
 @font-face {
@@ -258,12 +256,8 @@ main .image-box .hero h1 {
   display: none;
 }
 main .image-box .hero img {
-  -ms-flex-item-align: center;
-      align-self: center;
   height: 100px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 main .image-box .hero button {
   background-color: #f8df1f;
@@ -275,6 +269,9 @@ main .image-box .hero button {
 }
 main .article-1,
 main .article-2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,7 +280,6 @@ main .article-2 {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   margin: 0 auto;
-  max-width: 1000px;
   padding: 50px 10%;
 }
 main .article-1 div,
@@ -300,12 +296,17 @@ main .article-1 img,
 main .article-2 img {
   width: 25%;
 }
+main .article-2 {
+  background-color: #f3f3f3;
+}
+main .article-2 div,
+main .article-2 img {
+  padding-left: 10%;
+}
 .footer {
   background-color: #080801;
-  -ms-flex-item-align: center;
-      align-self: center;
+  border-top: 8px solid #f8df1f;
   height: 100px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+  padding: 15px 0 15px;
 }
