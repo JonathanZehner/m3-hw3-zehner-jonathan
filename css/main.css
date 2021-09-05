@@ -4,6 +4,20 @@
   margin: 0;
   padding: 0;
 }
+.nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 0;
+}
+.nav-ul li {
+  padding: 0 25px;
+  list-style-type: none;
+}
 .red-ltrs {
   color: #ee252f;
   text-transform: uppercase;
@@ -16,10 +30,9 @@
 /*== Header ==*/
 .header {
   background-color: #f8df1f;
-  height: 100px;
   padding: 50px 25px;
 }
-.header .nav ul {
+.header .nav-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,8 +40,10 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  margin: 0;
 }
-.header .nav ul li {
+.header .nav-ul li {
+  padding: 0 25px;
   list-style-type: none;
 }
 .footer {

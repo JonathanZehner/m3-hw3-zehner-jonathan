@@ -21,10 +21,21 @@
 @color-quaternary: #080801;
 
 // images
+@background: url(../img/banner-bg.png) no-repeat center;
 @height-img: 150px;
 @height-banner: 300px;
 
 // mixins
+.nav-ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    li {
+        padding: 0 25px;
+        list-style-type: @list;
+    }
+}
+
 .red-ltrs {
     color: @color-tertiary;
     text-transform: uppercase;

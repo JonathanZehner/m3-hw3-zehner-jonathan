@@ -9,24 +9,16 @@
 
 /*== Universal Styling ==*/
 .red-ltrs {
-    .red-ltrs();
+    .red-ltrs();// mixin
 }
 
 
 /*== Header ==*/
 .header {
     background-color: @color-secondary;
-    height: 100px;
     padding: @padding;
-    .nav {
-        ul {
-            display: flex;
-            flex-flow: row wrap;
-            
-            li {
-                list-style-type: @list;
-            }
-        }
+    .nav-ul {
+        .nav-ul ();
     }
 }
 
@@ -44,7 +36,7 @@ main {
     }
     .article-1 {
         h2 {
-            
+
         }
         p {
 
