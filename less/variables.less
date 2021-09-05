@@ -1,14 +1,14 @@
 @padding: 50px 25px;
 
 // fonts and typography
-@font-family: roboto;
+@font-family: 'Roboto', sans-serif;
 @text-align-c: center;
 @text-align-l: left;
 @list: none;
 
 // display
-@display-flex: flex;
-@display-block: inline-block;
+@display: flex;
+@block: inline-block;
 
 // alignment
 @flow-r: row wrap;
@@ -21,7 +21,7 @@
 @color-quaternary: #080801;
 
 // images
-@background: url(../img/banner-bg.png) no-repeat center;
+@background: url(../img/banner-bg.png);
 @height-img: 150px;
 @height-banner: 300px;
 
@@ -39,4 +39,28 @@
 .red-ltrs {
     color: @color-tertiary;
     text-transform: uppercase;
+}
+
+.logo {
+    align-self: center;
+    height: 100px;
+    justify-content: center;
+}
+
+/*-- Sticky Footer Mixin --*/
+.html-body {
+    html, body {
+        height: 100%;
+        body {
+            display: flex;
+            flex-direction: column;
+            main {
+                flex: 1 0 auto;
+            }
+            .footer {
+                flex-shrink: 0;
+            }
+        }
+    }
+
 }
