@@ -16,7 +16,7 @@ The purpose of this document is to explain thoughts behind coding choices with r
 
   <p> Creating the image overlay with 33% opacity provided a challenge that required researching the web for help. I ended up editing the hero image for the banner in Adobe Photoshop and added a solid color mask with a 33% opacity.  
 
-  
+  <p> Sticky footer will not align at the bottom of the page.
 
 ### External Resources Used:  
 
