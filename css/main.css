@@ -23,6 +23,10 @@
   color: #ee252f;
   text-transform: uppercase;
 }
+.background-img {
+  background: #f3f3f3 url(../img/banner-bgedit.jpg) no-repeat center;
+  background-size: cover;
+}
 .logo {
   -ms-flex-item-align: center;
       align-self: center;
@@ -56,6 +60,15 @@
 .html-body body body .footer {
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+.btn {
+  background-color: #f8df1f;
+  border: 1px solid #f8df1f;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  width: 150px;
 }
 @font-face {
   font-family: 'Roboto';
@@ -171,7 +184,19 @@ html body body .footer {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-/*== Header ==*/
+body {
+  font: normal 1rem/1.5 'Roboto', sans-serif;
+}
+button {
+  background-color: #f8df1f;
+  border: 1px solid #f8df1f;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  width: 150px;
+}
+/*== Header Styling ==*/
 .header {
   background-color: #f8df1f;
   padding: 50px 25px;
@@ -190,22 +215,46 @@ html body body .footer {
   padding: 0 25px;
   list-style-type: none;
 }
-main section {
-  background-image: url(../img/banner-bg.png);
+/*== Main Styling ==*/
+main .image-box {
+  background: #f3f3f3 url(../img/banner-bgedit.jpg) no-repeat center;
+  background-size: cover;
+}
+main .image-box .hero {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  height: 350px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-main section h1 {
+main .image-box .hero h1 {
   display: none;
 }
-main section img {
+main .image-box .hero img {
   -ms-flex-item-align: center;
       align-self: center;
   height: 100px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+main .image-box .hero button {
+  background-color: #f8df1f;
+  border: 1px solid #f8df1f;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  width: 150px;
 }
 .footer {
   background-color: #080801;

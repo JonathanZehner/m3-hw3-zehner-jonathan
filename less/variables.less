@@ -1,18 +1,20 @@
 @padding: 50px 25px;
 
 // fonts and typography
-@font-family: 'Roboto', sans-serif;
+@font: 'Roboto', sans-serif;
 @text-align-c: center;
 @text-align-l: left;
 @list: none;
+@upper: uppercase;
 
 // display
 @display: flex;
-@block: inline-block;
 
 // alignment
 @flow-r: row wrap;
 @flow-c: column wrap;
+@c: center;
+
 
 // colors
 @color-primary: #f3f3f3;
@@ -21,9 +23,13 @@
 @color-quaternary: #080801;
 
 // images
-@background: url(../img/banner-bg.png);
+@background: url(../img/banner-bgedit.jpg);
 @height-img: 150px;
-@height-banner: 300px;
+@banner: 350px;
+
+// element sizing
+@width: 150px;
+@height: 50px;
 
 // mixins
 .nav-ul {
@@ -38,7 +44,12 @@
 
 .red-ltrs {
     color: @color-tertiary;
-    text-transform: uppercase;
+    text-transform: @upper;
+}
+
+.background-img {
+    background: @color-primary @background no-repeat center;
+    background-size: cover;
 }
 
 .logo {
@@ -62,5 +73,15 @@
             }
         }
     }
+}
 
+// button mixin
+.btn {
+    background-color: @color-secondary;
+    border: 1px solid @color-secondary;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-transform: @upper;
+    width: @width;
 }

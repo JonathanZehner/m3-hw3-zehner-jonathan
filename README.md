@@ -20,4 +20,14 @@ The purpose of this document is to explain thoughts behind coding choices with r
 
 #### Bootstrap Introduction  
 
-  <p> https://getbootstrap.com/docs/5.1/getting-started/introduction/  
+  <p> -https://getbootstrap.com/docs/5.1/getting-started/introduction/  
+
+
+#### Google Fonts Roboto  
+
+  <p> -https://fonts.google.com/specimen/Roboto#standard-styles  
+
+
+#### Adding image overlay  
+
+  <p> -https://dev.to/selbekk/how-to-overlay-your-background-images-59le

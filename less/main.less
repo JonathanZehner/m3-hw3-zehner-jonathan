@@ -19,8 +19,16 @@ html {
     .html-body();
 }
 
+body {
+    font: normal 1rem/1.5 @font;
+}
 
-/*== Header ==*/
+button {
+    .btn();
+}
+
+
+/*== Header Styling ==*/
 .header {
     background-color: @color-secondary;
     padding: @padding;
@@ -29,17 +37,26 @@ html {
     }
 }
 
+/*== Main Styling ==*/
 main {
-    section {
-        background-image: @background;
-        display: @display;
-        h1 {
-            display: none;
-        }
-        img {
-            .logo();
-        }
-        button {
+    .image-box {
+        .background-img();
+        .hero {
+            align-items: center;
+            display: @display;
+            flex-flow: @flow-c;
+            height: @banner;
+            justify-content: @c;
+            h1 {
+                display: none;
+            }
+            img {
+                .logo();
+            }
+            button {
+                .btn();
+
+            }
 
         }
     }
