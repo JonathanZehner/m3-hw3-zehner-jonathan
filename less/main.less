@@ -17,7 +17,7 @@
 }
 
 html {
-    .html-body();
+    .html-body();// mixin
 }
 
 body {
@@ -26,7 +26,7 @@ body {
 }
 
 button {
-    .btn();
+    .btn();// mixin
 }
 
 
@@ -42,37 +42,36 @@ button {
 /*== Main Styling ==*/
 main {
     .image-box {
-        .background-img();
+        .background-img();// mixin
         .hero {
             align-items: center;
             display: flex;
             flex-flow: @flow-c;
             height: @banner;
             justify-content: @c;
+
             h1 {
                 display: none;
             }
             img {
-                .logo();
+                .logo();// mixin
             }
             button {
-                .btn();
+                .btn();// mixin
             }
-
         }
     }
-    .article-1 {
-        h2 {
+    .article-1, .article-2 {
+        .flex-art();// mixin
 
-        }
-        p {
-
-        }
-        button {
-
+        div {
+        padding-right: @pad-r;
+            h2 {
+                .h2();// mixin
+            }
         }
         img {
-
+            width: @img;
         }
     }
     .article-2 {
@@ -93,5 +92,5 @@ main {
 
 .footer {
     background-color: @color-quaternary;
-    .logo();
+    .logo();// mixin
 }

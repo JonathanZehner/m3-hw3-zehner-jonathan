@@ -5,37 +5,6 @@
   padding: 0;
 }
 /*-- Imports --*/
-.nav-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  margin: 0;
-}
-.nav-ul li {
-  font: 500 12px 'Roboto', sans-serif;
-  padding: 0 25px;
-  list-style-type: none;
-}
-.red-ltrs {
-  color: #ee252f;
-  text-transform: uppercase;
-}
-.background-img {
-  background: #f3f3f3 url(../img/banner-bgedit.jpg) no-repeat center;
-  background-size: cover;
-}
-.logo {
-  -ms-flex-item-align: center;
-      align-self: center;
-  height: 100px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 /*-- Sticky Footer Mixin --*/
 .html-body html,
 .html-body body {
@@ -62,6 +31,37 @@
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+.nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin: 0;
+}
+.nav-ul li {
+  font: 500 12px 'Roboto', sans-serif;
+  padding: 0 25px;
+  list-style-type: none;
+}
+.red-ltrs {
+  color: #ee252f;
+  text-transform: uppercase;
+}
+.background-img {
+  background: #f3f3f3 url(../img/banner-bgedit.jpg) no-repeat center;
+  background-size: cover;
+}
+.logo {
+  -ms-flex-item-align: center;
+      align-self: center;
+  height: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .btn {
   background-color: #f8df1f;
   border: 1px solid #f8df1f;
@@ -69,7 +69,23 @@
   margin-top: 20px;
   padding: 10px 20px;
   text-transform: uppercase;
-  width: 150px;
+}
+.h2 {
+  font: 500 20px 'Roboto', sans-serif;
+  padding: 0 0 10px;
+  text-transform: uppercase;
+}
+.flex-art {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 50px 10%;
 }
 @font-face {
   font-family: 'Roboto';
@@ -196,7 +212,6 @@ button {
   margin-top: 20px;
   padding: 10px 20px;
   text-transform: uppercase;
-  width: 150px;
 }
 /*== Header Styling ==*/
 .header {
@@ -209,8 +224,8 @@ button {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   margin: 0;
 }
 .header .nav-ul li {
@@ -257,7 +272,33 @@ main .image-box .hero button {
   margin-top: 20px;
   padding: 10px 20px;
   text-transform: uppercase;
-  width: 150px;
+}
+main .article-1,
+main .article-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 50px 10%;
+}
+main .article-1 div,
+main .article-2 div {
+  padding-right: 10%;
+}
+main .article-1 div h2,
+main .article-2 div h2 {
+  font: 500 20px 'Roboto', sans-serif;
+  padding: 0 0 10px;
+  text-transform: uppercase;
+}
+main .article-1 img,
+main .article-2 img {
+  width: 25%;
 }
 .footer {
   background-color: #080801;

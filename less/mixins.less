@@ -1,5 +1,22 @@
 @import "variables";
 
+/*-- Sticky Footer Mixin --*/
+.html-body {
+    html, body {
+        height: 100%;
+        body {
+            display: flex;
+            flex-direction: column;
+            main {
+                flex: 1 0 auto;
+            }
+            .footer {
+                flex-shrink: 0;
+            }
+        }
+    }
+}
+
 .nav-ul {
     display: flex;
     flex-flow: @flow-r;
@@ -27,24 +44,6 @@
     justify-content: center;
 }
 
-/*-- Sticky Footer Mixin --*/
-.html-body {
-    html, body {
-        height: 100%;
-        body {
-            display: flex;
-            flex-direction: column;
-            main {
-                flex: 1 0 auto;
-            }
-            .footer {
-                flex-shrink: 0;
-            }
-        }
-    }
-}
-
-// button mixin
 .btn {
     background-color: @color-secondary;
     border: 1px solid @color-secondary;
@@ -52,5 +51,18 @@
     margin-top: 20px;
     padding: 10px 20px;
     text-transform: @upper;
-    width: @width;
+}
+
+.h2 {
+    font: @font-h;
+    padding: @h-pad;
+    text-transform: @upper;
+}
+
+.flex-art {
+    display: flex;
+    flex-flow: @flow-r;
+    margin: 0 auto;
+    max-width: @sxn-w;
+    padding: @sxn-pad;
 }
