@@ -14,7 +14,9 @@ The purpose of this document is to explain thoughts behind coding choices with r
 
 ### Issues experienced:  
 
-  <p> Creating the image overlay with 33% opacity provided a challenge that required researching the web for help. 
+  <p> Creating the image overlay with 33% opacity provided a challenge that required researching the web for help. I ended up editing the hero image for the banner in Adobe Photoshop and added a solid color mask with a 33% opacity.  
+
+  
 
 ### External Resources Used:  
 
