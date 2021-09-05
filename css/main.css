@@ -16,12 +16,12 @@
   margin: 0;
 }
 .nav-ul li {
+  font: 500 12px 'Roboto', sans-serif;
   padding: 0 25px;
   list-style-type: none;
 }
 .red-ltrs {
   color: #ee252f;
-  font: 500 30px/1.5 'Roboto', sans-serif;
   text-transform: uppercase;
 }
 .background-img {
@@ -158,7 +158,6 @@
 /*== Universal Styling ==*/
 .red-ltrs {
   color: #ee252f;
-  font: 500 30px/1.5 'Roboto', sans-serif;
   text-transform: uppercase;
 }
 html html,
@@ -187,7 +186,7 @@ html body body .footer {
       flex-shrink: 0;
 }
 body {
-  font: 400 0.66666667rem 'Roboto', sans-serif;
+  font: 400 10.66666667px 'Roboto', sans-serif;
   color: #050500;
 }
 button {
@@ -215,6 +214,7 @@ button {
   margin: 0;
 }
 .header .nav-ul li {
+  font: 500 12px 'Roboto', sans-serif;
   padding: 0 25px;
   list-style-type: none;
 }
@@ -224,16 +224,6 @@ main .image-box {
   background-size: cover;
 }
 main .image-box .hero {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
   height: 350px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

@@ -14,7 +14,7 @@ The purpose of this document is to explain thoughts behind coding choices with r
 
 ### Issues experienced:  
 
-  <p> "I had no issues during this project" . 
+  <p> Creating the image overlay with 33% opacity provided a challenge that required researching the web for help. 
 
 ### External Resources Used:  
 
