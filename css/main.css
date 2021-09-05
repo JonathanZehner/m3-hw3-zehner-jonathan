@@ -20,6 +20,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.html-body html body header,
+.html-body body body header,
 .html-body html body main,
 .html-body body body main {
   -webkit-box-flex: 1;
@@ -188,6 +190,8 @@ html body body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+html html body header,
+html body body header,
 html html body main,
 html body body main {
   -webkit-box-flex: 1;
