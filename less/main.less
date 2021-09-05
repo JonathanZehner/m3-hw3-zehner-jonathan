@@ -4,3 +4,24 @@
     margin: 0;
     padding: 0;
 }
+
+@import "variables"; //variables.less
+
+/*== Header ==*/
+.header {
+    background-color: @color-secondary;
+    height: 100px;
+    .nav {
+        ul {
+            display: @display-flex;
+            flex-flow: @flex-flow-r;
+
+            li {
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: @color-quaternary;
+}

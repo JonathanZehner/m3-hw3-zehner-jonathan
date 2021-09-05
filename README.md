@@ -18,6 +18,6 @@ The purpose of this document is to explain thoughts behind coding choices with r
 
 ### External Resources Used:  
 
-  #### Bootstrap Introduction  
+#### Bootstrap Introduction  
 
   <p> https://getbootstrap.com/docs/5.1/getting-started/introduction/  
