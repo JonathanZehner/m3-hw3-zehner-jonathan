@@ -8,8 +8,9 @@
 #### jonathan.zehner@ufl.edu  
 
 ____________________________  
+  
 
-
+The purpose of this document is to explain thoughts behind coding choices with regard to issues experienced and to credit external entities as appropriate by copyright laws.
 
 ### Issues experienced:  
 
